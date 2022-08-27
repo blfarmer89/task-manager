@@ -283,3 +283,129 @@ ul {
   border-radius: 0.5rem;
   margin-top: -1rem;
 }
+
+.form {
+  margin-top: 6rem;
+}
+
+.form h4 {
+  text-align: center;
+}
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 568px) {
+  .form-container {
+    display: flex;
+  }
+  .task-input {
+    border-radius: 0;
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+  }
+  .submit-btn {
+    border-radius: 0;
+    border-top-right-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+    margin-top: 0;
+    width: 30%;
+  }
+}
+
+.tasks-container {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+}
+
+.tasks {
+  display: grid;
+  gap: 1rem;
+}
+
+.single-task {
+  max-width: var(--fixed-width);
+  display: flex;
+  justify-content: space-between;
+  background: var(--grey-300);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  margin: 0;
+  align-items: center;
+  padding: 0.5rem 3rem;
+}
+
+.single-task:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.single-task h5 {
+  margin-bottom: 0;
+}
+
+.single-task .fa-check-circle {
+  margin-left: -1.25rem;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  color: var(--green-dark);
+  visibility: hidden;
+}
+
+.completed .fa-check-circle {
+  visibility: visible;
+}
+
+.edit-link {
+  font-size: 1rem;
+  color: var(--green-dark);
+}
+.delete-btn {
+  background: transparent;
+  color: var(--red-dark);
+  border: none;
+}
+
+.completed h5 {
+  text-decoration: line-through;
+}
+
+.form-control {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.edit-task {
+  width: 100%;
+}
+.form-label {
+  font-size: 1rem;
+}
+.task-ID {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  align-items: center;
+}
+
+.completed-check-box {
+  height: 1rem;
+}
+
+.edit-form .form-alert {
+  text-align: center;
+}
+.edit-btn {
+  margin-bottom: 0.5rem;
+}
+
+.back-link {
+  display: block;
+  width: 90vw;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}

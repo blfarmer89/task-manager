@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+   
+    <form class="form edit-form">
+        <h4>edit task</h4>
+        <!-- task ID -->
+        <div class="form-control">
+       <label class="form-label">Task ID</label>
+        <span class="task-number">123456789</span>
+    </div>
+    <!-- end of task ID-->
+    <!-- Name of Task -->
+        <div class="form-control">
+      <label class="form-label"> Name</label>
+      <div class="form-container">
+        <input
+          type="text"
+          id="task"
+          class="form-input edit-task"
+          placeholder="walk the dog"
+        /></div></div>
+        <!-- end of Name of Task -->
+        <!-- Completed row -->
+        <div class="form-control">
+            <label class="form-label">completed</label>
+            <input type="checkbox" name="completed" class="completed-check-box" id="">
+        </div>
+        <!-- end of Completed row -->
+
+    
+        <button class="btn btn-block edit-btn">Edit</button>
+      <div class="form-alert text_small">there was an error</div>
+    </form>
+
+    <a href="index.html" class="btn back-link">back to tasks</a>
+
+   
+    </section>
+  </body>
+</html>
